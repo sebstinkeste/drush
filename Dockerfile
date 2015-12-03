@@ -6,5 +6,6 @@ RUN apt-get update && apt-get install -y mysql-client \
 
 WORKDIR /var/www
 
+ENTRYPOINT ['/entrypoint.sh', '/usr/local/bin/drush']
 
 
